@@ -1,0 +1,70 @@
+{
+  "config": {
+    "seed": 42,
+    "stage2_t_min": 0.005,
+    "diff_steps": 80000,
+    "warmup_steps": 60000,
+    "batch_size": 128,
+    "lr": 0.0003,
+    "cutoff": 0.2,
+    "filter_type": "ideal",
+    "n_eval": 25600,
+    "n_fid": 10000,
+    "baseline_variant": "checkpoints/matched_stage2",
+    "ae_checkpoint": "/home/weihuang/diffusion_latent/checkpoints/matched_stage2/stacked_mnist_ldm_ae_t005_seed42.pt",
+    "baseline_results": "/home/weihuang/diffusion_latent/checkpoints/matched_stage2/../../logs/matched_stage2/stacked_mnist_results_t005_seed42.json",
+    "force_train": false,
+    "experiment_variant": "freqwarm_stacked",
+    "stage2_time_range": [
+      0.005,
+      0.999
+    ]
+  },
+  "filter_diagnostic": {
+    "mse": 0.015560667961835861,
+    "mode_identity_acc": 0.9610000252723694
+  },
+  "train": {
+    "last_loss": 0.18213731050491333,
+    "warm_loss_last_1k": 0.19834218598902226,
+    "full_loss_last_1k": 0.19837395931780338
+  },
+  "ldm_freqwarm": {
+    "avg_eps_loss": 0.37387095736339687,
+    "eps_loss_by_time": {
+      "0.01": 0.9059804081916809,
+      "0.1": 0.5874493718147278,
+      "0.3": 0.3002772331237793,
+      "0.5": 0.07354938238859177,
+      "0.8": 0.0020983912982046604
+    },
+    "n_modes_covered": 1000,
+    "kl_to_uniform": 0.02892962284386158,
+    "entropy_nats": 6.878825664520264,
+    "fid": 16.714153426375304,
+    "is_mean": 1.7229608587198038,
+    "is_std": 0.0211832868718345
+  },
+  "matched_job_18452203": {
+    "uld": {
+      "recon_mse": 0.003534693270921707,
+      "avg_eps_loss": 0.39245909163728354,
+      "n_modes_covered": 1000,
+      "kl_to_uniform": 0.026880774646997452,
+      "entropy_nats": 6.880875110626221,
+      "fid": 7.819042406551432,
+      "is_mean": 1.7337434577815762,
+      "is_std": 0.019771334327774184
+    },
+    "ldm": {
+      "recon_mse": 0.006217510439455509,
+      "avg_eps_loss": 0.3735836442559958,
+      "n_modes_covered": 1000,
+      "kl_to_uniform": 0.02908894419670105,
+      "entropy_nats": 6.878666877746582,
+      "fid": 16.318088165464673,
+      "is_mean": 1.7174044076375914,
+      "is_std": 0.0157100274052799
+    }
+  }
+}

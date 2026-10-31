@@ -1,0 +1,48 @@
+{
+  "dataset": "MUV",
+  "config": {
+    "d": 1920,
+    "vocab_size": 30,
+    "max_len": 64,
+    "latent_dim": 64,
+    "t0": 0.05,
+    "ae_steps": 20000,
+    "diff_steps": 80000,
+    "batch_size": 256,
+    "n_eval": 10000
+  },
+  "real_baseline": {
+    "validity": 1.0,
+    "uniqueness": 0.9489,
+    "novelty": 0.0,
+    "n_total": 10000,
+    "n_valid": 10000,
+    "n_unique": 9489,
+    "n_novel": 0,
+    "repaired": false
+  },
+  "uld": {
+    "recon_mse": 0.00860646739602089,
+    "avg_eps_loss": 0.16852364239748568,
+    "validity": 0.0094,
+    "uniqueness": 1.0,
+    "novelty": 1.0,
+    "n_total": 10000,
+    "n_valid": 94,
+    "n_unique": 94,
+    "n_novel": 94,
+    "repaired": false
+  },
+  "ldm": {
+    "recon_mse": 0.014184584841132164,
+    "avg_eps_loss": 0.14973387734498828,
+    "validity": 0.0085,
+    "uniqueness": 0.8823529411764706,
+    "novelty": 1.0,
+    "n_total": 10000,
+    "n_valid": 85,
+    "n_unique": 75,
+    "n_novel": 75,
+    "repaired": false
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "validity": 0.9998,
+  "uniqueness": 0.9637927585517103,
+  "novelty": 0.037359900373599,
+  "novel_over_valid": 0.03600720144028806,
+  "n_total": 10000,
+  "n_valid": 9998,
+  "n_unique": 9636,
+  "n_novel": 360,
+  "avg_heavy_atoms_valid": 8.778555711142229,
+  "decode_mode": "rdkit_longest",
+  "internal_diversity": 0.9193339832390989,
+  "qed_mean": 0.46321298003792355,
+  "qed_std": 0.07422287814346908,
+  "qed_n": 9998,
+  "fcd": 5.042357897050486
+}

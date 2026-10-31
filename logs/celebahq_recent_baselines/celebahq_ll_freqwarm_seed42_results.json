@@ -1,0 +1,32 @@
+{
+  "method": "freqwarm",
+  "seed": 42,
+  "experiment_variant": "celebahq_recent_baselines",
+  "config": {
+    "method": "freqwarm",
+    "seed": 42,
+    "ae_steps": 100000,
+    "diff_steps": 300000,
+    "batch_size": 32,
+    "warmup_steps": 225000,
+    "cutoff": 0.2,
+    "scale_weight": 1.0,
+    "scale_factors": [
+      0.5,
+      0.25
+    ],
+    "n_fid": 2048
+  },
+  "results": {
+    "eps_loss": 0.3074455751804635,
+    "eps_loss_by_time": {
+      "0.01": 0.9311197996139526,
+      "0.1": 0.4390093684196472,
+      "0.3": 0.12941165268421173,
+      "0.5": 0.036328643560409546,
+      "0.8": 0.001358411624096334
+    },
+    "rfid": 0.2980516850948334,
+    "fid": 141.10816955566406
+  }
+}

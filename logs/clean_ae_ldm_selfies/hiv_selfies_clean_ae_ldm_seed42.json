@@ -1,0 +1,146 @@
+{
+  "dataset": "HIV",
+  "representation": "SELFIES",
+  "method": "CleanAE+LDM",
+  "config": {
+    "dataset": "hiv",
+    "seed": 42,
+    "stage2_t_min": 0.001,
+    "ae_steps": 40000,
+    "diff_steps": 200000,
+    "batch_size": 256,
+    "ae_lr": 0.0001,
+    "diff_lr": 0.0003,
+    "min_snr_gamma": 5.0,
+    "sample_steps": 200,
+    "n_eval": 10000,
+    "force_train": false,
+    "d": 26112,
+    "vocab_size": 204,
+    "max_len": 128,
+    "latent_dim": 512,
+    "hidden_dim": 1024,
+    "n_score_layers": 8,
+    "experiment_variant": "clean_ae_ldm_selfies",
+    "stage1_input": "clean_x0",
+    "stage1_objective": "deterministic_reconstruction_mse_no_kl",
+    "stage2_objective": "matched_latent_noise_prediction",
+    "stage2_time_range": [
+      0.001,
+      0.999
+    ]
+  },
+  "methods": {
+    "CleanAE+LDM": {
+      "validity": 1.0,
+      "uniqueness": 0.9882,
+      "novelty": 0.9994940295486744,
+      "novel_over_valid": 0.9877,
+      "n_total": 10000,
+      "n_valid": 10000,
+      "n_unique": 9882,
+      "n_novel": 9877,
+      "avg_heavy_atoms_valid": 20.7998,
+      "decode_mode": "selfies",
+      "internal_diversity": 0.9035794044271264,
+      "qed_mean": 0.4300257244466983,
+      "qed_std": 0.20279828245978496,
+      "qed_n": 10000,
+      "fcd": 10.290542202803785,
+      "recon_mse": 0.00032836469472385943,
+      "avg_eps_loss": 0.10946842359844595,
+      "eps_loss_by_time": {
+        "0.01": 0.44672438502311707,
+        "0.1": 0.01981259137392044,
+        "0.3": 0.04097727686166763,
+        "0.5": 0.038145698606967926,
+        "0.8": 0.0016821661265566945
+      }
+    }
+  },
+  "train": {
+    "clean_ae": {
+      "last_loss": 0.0003040633746422827,
+      "loss_last_1k": 0.0003223384081211407
+    },
+    "stage2": {
+      "last_loss": 0.020197391510009766,
+      "loss_last_1k": 0.019179067419841885
+    }
+  },
+  "reference": {
+    "path": "/home/weihuang/diffusion_latent/logs/sild_matches_ldm/hiv_selfies_results.json",
+    "real_baseline": {
+      "validity": 1.0,
+      "uniqueness": 0.8893,
+      "novelty": 0.0,
+      "novel_over_valid": 0.0,
+      "n_total": 10000,
+      "n_valid": 10000,
+      "n_unique": 8893,
+      "n_novel": 0,
+      "avg_heavy_atoms_valid": 24.9187,
+      "decode_mode": "selfies",
+      "internal_diversity": 0.8976996913384447,
+      "qed_mean": 0.5133307194670846,
+      "qed_std": 0.21878442716176671,
+      "qed_n": 10000,
+      "fcd": 3.2386597538828426
+    },
+    "SiLD": {
+      "validity": 1.0,
+      "uniqueness": 0.9863,
+      "novelty": 0.9994930548514651,
+      "novel_over_valid": 0.9858,
+      "n_total": 10000,
+      "n_valid": 10000,
+      "n_unique": 9863,
+      "n_novel": 9858,
+      "avg_heavy_atoms_valid": 20.4354,
+      "decode_mode": "selfies",
+      "internal_diversity": 0.9033443166378199,
+      "qed_mean": 0.4341737776969485,
+      "qed_std": 0.20294605115424627,
+      "qed_n": 10000,
+      "fcd": 10.443248153878471,
+      "recon_mse": 0.0003242871898692101,
+      "avg_eps_loss": 0.10770576058421284
+    },
+    "VAE-LDM": {
+      "validity": 1.0,
+      "uniqueness": 0.0099,
+      "novelty": 1.0,
+      "novel_over_valid": 0.0099,
+      "n_total": 10000,
+      "n_valid": 10000,
+      "n_unique": 99,
+      "n_novel": 99,
+      "avg_heavy_atoms_valid": 38.1382,
+      "decode_mode": "selfies",
+      "internal_diversity": 0.01228365312510582,
+      "qed_mean": 0.11373402136727506,
+      "qed_std": 0.06864184896339562,
+      "qed_n": 10000,
+      "fcd": 60.96014308887079,
+      "recon_mse": 0.0013863062486052513,
+      "avg_eps_loss": 0.22037991646211594
+    },
+    "CharRNN": {
+      "validity": 0.9997,
+      "uniqueness": 0.8883665099529859,
+      "novelty": 0.04391397365161581,
+      "novel_over_valid": 0.03901170351105332,
+      "n_total": 10000,
+      "n_valid": 9997,
+      "n_unique": 8881,
+      "n_novel": 390,
+      "avg_heavy_atoms_valid": 25.221166349904973,
+      "decode_mode": "selfies",
+      "internal_diversity": 0.8985232361291206,
+      "qed_mean": 0.513685870994922,
+      "qed_std": 0.21834426610208582,
+      "qed_n": 9997,
+      "fcd": 3.2401657362629805
+    }
+  }
+}

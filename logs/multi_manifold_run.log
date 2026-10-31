@@ -1,0 +1,112 @@
+Device: cpu
+======================================================================
+Multi-Manifold Lifted (D=128, K=3 components, intrinsic=2)
+  latent_dim=8, t0=0.005
+  Stage1=4000, Stage2=8000, batch=2048
+======================================================================
+  Ground-truth coverage: [0.333, 0.333, 0.333]
+  Intrinsic (95% PCA): k=2
+
+  Real-data baseline:
+    mean_dist_to_M=0.0426  p95=0.1198
+    coverage=[0.342, 0.329, 0.33]
+
+======================================================================
+MODEL 1: ULD (Two-Stage Manifold Diffusion)
+======================================================================
+
+--- ULD Stage 1 (denoising AE at small t0) ---
+  Stage 1: t0=0.005, sigma_t0=0.0050, latent_dim=8
+  Stage 1 [50/4000] recon_loss=0.008025
+  Stage 1 [100/4000] recon_loss=0.004970
+  Stage 1 [150/4000] recon_loss=0.001549
+  Stage 1 [200/4000] recon_loss=0.001041
+  Stage 1 [250/4000] recon_loss=0.000730
+  Stage 1 [300/4000] recon_loss=0.000493
+  Stage 1 [350/4000] recon_loss=0.000311
+  Stage 1 [400/4000] recon_loss=0.000236
+  Stage 1 [450/4000] recon_loss=0.000188
+  Stage 1 [500/4000] recon_loss=0.000154
+  Stage 1 [550/4000] recon_loss=0.000132
+  Stage 1 [600/4000] recon_loss=0.000107
+  Stage 1 [650/4000] recon_loss=0.000088
+  Stage 1 [700/4000] recon_loss=0.000077
+  Stage 1 [750/4000] recon_loss=0.000062
+  Stage 1 [800/4000] recon_loss=0.000064
+  Stage 1 [850/4000] recon_loss=0.000053
+  Stage 1 [900/4000] recon_loss=0.000148
+  Stage 1 [950/4000] recon_loss=0.000045
+  Stage 1 [1000/4000] recon_loss=0.000043
+  Stage 1 [1050/4000] recon_loss=0.000043
+  Stage 1 [1100/4000] recon_loss=0.000040
+  Stage 1 [1150/4000] recon_loss=0.000038
+  Stage 1 [1200/4000] recon_loss=0.000034
+  Stage 1 [1250/4000] recon_loss=0.000034
+  Stage 1 [1300/4000] recon_loss=0.000032
+  Stage 1 [1350/4000] recon_loss=0.000031
+  Stage 1 [1400/4000] recon_loss=0.000029
+  Stage 1 [1450/4000] recon_loss=0.000040
+  Stage 1 [1500/4000] recon_loss=0.000024
+  Stage 1 [1550/4000] recon_loss=0.000024
+  Stage 1 [1600/4000] recon_loss=0.000023
+  Stage 1 [1650/4000] recon_loss=0.000022
+  Stage 1 [1700/4000] recon_loss=0.000021
+  Stage 1 [1750/4000] recon_loss=0.000021
+  Stage 1 [1800/4000] recon_loss=0.000020
+  Stage 1 [1850/4000] recon_loss=0.000020
+  Stage 1 [1900/4000] recon_loss=0.000019
+  Stage 1 [1950/4000] recon_loss=0.000019
+  Stage 1 [2000/4000] recon_loss=0.000017
+  Stage 1 [2050/4000] recon_loss=0.000017
+  Stage 1 [2100/4000] recon_loss=0.000016
+  Stage 1 [2150/4000] recon_loss=0.000016
+  Stage 1 [2200/4000] recon_loss=0.000016
+  Stage 1 [2250/4000] recon_loss=0.000016
+  Stage 1 [2300/4000] recon_loss=0.000015
+  Stage 1 [2350/4000] recon_loss=0.000015
+  Stage 1 [2400/4000] recon_loss=0.000015
+  Stage 1 [2450/4000] recon_loss=0.000015
+  Stage 1 [2500/4000] recon_loss=0.000014
+  Stage 1 [2550/4000] recon_loss=0.000014
+  Stage 1 [2600/4000] recon_loss=0.000014
+  Stage 1 [2650/4000] recon_loss=0.000014
+  Stage 1 [2700/4000] recon_loss=0.000014
+  Stage 1 [2750/4000] recon_loss=0.000013
+  Stage 1 [2800/4000] recon_loss=0.000013
+  Stage 1 [2850/4000] recon_loss=0.000013
+  Stage 1 [2900/4000] recon_loss=0.000014
+  Stage 1 [2950/4000] recon_loss=0.000013
+  Stage 1 [3000/4000] recon_loss=0.000013
+  Stage 1 [3050/4000] recon_loss=0.000013
+  Stage 1 [3100/4000] recon_loss=0.000012
+  Stage 1 [3150/4000] recon_loss=0.000012
+  Stage 1 [3200/4000] recon_loss=0.000012
+  Stage 1 [3250/4000] recon_loss=0.000012
+  Stage 1 [3300/4000] recon_loss=0.000012
+  Stage 1 [3350/4000] recon_loss=0.000012
+  Stage 1 [3400/4000] recon_loss=0.000012
+  Stage 1 [3450/4000] recon_loss=0.000012
+  Stage 1 [3500/4000] recon_loss=0.000012
+  Stage 1 [3550/4000] recon_loss=0.000012
+  Stage 1 [3600/4000] recon_loss=0.000012
+  Stage 1 [3650/4000] recon_loss=0.000012
+  Stage 1 [3700/4000] recon_loss=0.000012
+  Stage 1 [3750/4000] recon_loss=0.000012
+  Stage 1 [3800/4000] recon_loss=0.000012
+  Stage 1 [3850/4000] recon_loss=0.000012
+  Stage 1 [3900/4000] recon_loss=0.000012
+  Stage 1 [3950/4000] recon_loss=0.000011
+  Stage 1 [4000/4000] recon_loss=0.000012
+  Latent stats: mean_norm=0.4038, std=[0.7484, 2.1992]
+
+--- ULD Stage 2 (latent diffusion on [t0, T]) ---
+  Stage 2 [200/8000] latent_eps_loss=0.123482
+  Stage 2 [400/8000] latent_eps_loss=0.109337
+  Stage 2 [600/8000] latent_eps_loss=0.108135
+  Stage 2 [800/8000] latent_eps_loss=0.107991
+  Stage 2 [1000/8000] latent_eps_loss=0.108771
+  Stage 2 [1200/8000] latent_eps_loss=0.098885
+  Stage 2 [1400/8000] latent_eps_loss=0.100775
+  Stage 2 [1600/8000] latent_eps_loss=0.102491
+  Stage 2 [1800/8000] latent_eps_loss=0.099970
+  Stage 2 [2000/8000] latent_eps_loss=0.103555

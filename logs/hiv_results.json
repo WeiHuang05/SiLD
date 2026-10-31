@@ -1,0 +1,48 @@
+{
+  "dataset": "HIV",
+  "config": {
+    "d": 5472,
+    "vocab_size": 57,
+    "max_len": 96,
+    "latent_dim": 64,
+    "t0": 0.05,
+    "ae_steps": 20000,
+    "diff_steps": 80000,
+    "batch_size": 256,
+    "n_eval": 10000
+  },
+  "real_baseline": {
+    "validity": 0.9998,
+    "uniqueness": 0.887377475495099,
+    "novelty": 0.0,
+    "n_total": 10000,
+    "n_valid": 9998,
+    "n_unique": 8872,
+    "n_novel": 0,
+    "repaired": false
+  },
+  "uld": {
+    "recon_mse": 0.0038678632117807865,
+    "avg_eps_loss": 0.17320980466902255,
+    "validity": 0.0151,
+    "uniqueness": 0.9602649006622517,
+    "novelty": 1.0,
+    "n_total": 10000,
+    "n_valid": 151,
+    "n_unique": 145,
+    "n_novel": 145,
+    "repaired": false
+  },
+  "ldm": {
+    "recon_mse": 0.006319250445812941,
+    "avg_eps_loss": 0.12034019401762634,
+    "validity": 0.0687,
+    "uniqueness": 0.16448326055312956,
+    "novelty": 1.0,
+    "n_total": 10000,
+    "n_valid": 687,
+    "n_unique": 113,
+    "n_novel": 113,
+    "repaired": false
+  }
+}

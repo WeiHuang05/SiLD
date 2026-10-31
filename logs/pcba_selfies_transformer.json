@@ -1,0 +1,17 @@
+{
+  "validity": 1.0,
+  "uniqueness": 0.9994,
+  "novelty": 0.9511707024214529,
+  "novel_over_valid": 0.9506,
+  "n_total": 10000,
+  "n_valid": 10000,
+  "n_unique": 9994,
+  "n_novel": 9506,
+  "avg_heavy_atoms_valid": 25.7345,
+  "decode_mode": "selfies",
+  "internal_diversity": 0.8685721838009248,
+  "qed_mean": 0.6243026630123779,
+  "qed_std": 0.1822879609018859,
+  "qed_n": 10000,
+  "fcd": 7.3842916367854485
+}

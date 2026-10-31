@@ -1,0 +1,19 @@
+{
+  "config": {
+    "regularizer": "projection",
+    "reg_weight": 10.0,
+    "seed": 42,
+    "log_every": 10
+  },
+  "d": 100,
+  "k_true_data_synthesis_only": 5,
+  "m": 200,
+  "sigma_t": 0.1,
+  "h_t": 0.010000000000000002,
+  "final_d_hat": 5,
+  "final_proj_defect": 0.043249230831861496,
+  "final_holdout_dsm": 4.853662490844727,
+  "final_res_tangent": 4.8474860191345215,
+  "final_res_normal": 0.006176673341542482,
+  "posthoc_WWt_to_Ptrue_fro": 0.09643950313329697
+}

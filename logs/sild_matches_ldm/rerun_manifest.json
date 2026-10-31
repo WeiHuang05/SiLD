@@ -1,0 +1,25 @@
+{
+  "experiment_variant": "sild_matches_ldm",
+  "submitted_at": "2026-07-25T21:45:44+09:00",
+  "rule": "Keep SiLD Stage-1 t0 unchanged. Train and sample both SiLD and LDM Stage 2 on [0.001, 0.999].",
+  "artifact_roots": {
+    "checkpoints": "checkpoints/sild_matches_ldm",
+    "logs": "logs/sild_matches_ldm",
+    "figures": "figures/sild_matches_ldm"
+  },
+  "jobs": {
+    "stacked_mnist_seed42_stage1_t0_0.005": 18452216,
+    "stacked_mnist_seed43_stage1_t0_0.005": 18452217,
+    "stacked_mnist_seed44_stage1_t0_0.005": 18452218,
+    "celeba_mmd_stage1_t0_0.005": 18452219,
+    "celeba_gan_stage1_t0_0.005": 18452220,
+    "selfies_qm9_stage1_t0_0.05": 18452221,
+    "selfies_hiv_stage1_t0_0.05": 18452222,
+    "selfies_muv_stage1_t0_0.05": 18452223,
+    "selfies_pcba_stage1_t0_0.05": 18452224,
+    "celebahq_small_stage1_t0_0.005": 18452225,
+    "celebahq_large_stage1_t0_0.005": 18452226,
+    "celebahq_large_10x_stage1_t0_0.005": 18452227,
+    "aggregate_after_all": 18452228
+  }
+}

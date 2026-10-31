@@ -1,0 +1,79 @@
+{
+  "config": {
+    "seed": 43,
+    "stage2_t_min": 0.001,
+    "ae_steps": 20000,
+    "diff_steps": 80000,
+    "batch_size": 128,
+    "ae_lr": 0.0001,
+    "diff_lr": 0.0003,
+    "sample_steps": 500,
+    "n_eval": 25600,
+    "n_fid": 10000,
+    "force_train": false,
+    "experiment_variant": "clean_ae_ldm_stacked",
+    "stage1_input": "clean_x0",
+    "stage1_objective": "deterministic_reconstruction_mse_no_kl",
+    "stage2_objective": "standard_ldm_latent_noise_prediction",
+    "stage2_time_range": [
+      0.001,
+      0.999
+    ]
+  },
+  "classifier_acc_on_real_stacked": 0.9790234565734863,
+  "real": {
+    "n_modes_covered": 1000,
+    "kl_to_uniform": 0.03361157700419426,
+    "entropy_nats": 6.874143600463867
+  },
+  "clean_ae_ldm": {
+    "recon_mse": 0.003517083590850234,
+    "avg_eps_loss": 0.3905060028657317,
+    "eps_loss_by_time": {
+      "0.01": 0.9813095331192017,
+      "0.1": 0.6070699095726013,
+      "0.3": 0.2852906882762909,
+      "0.5": 0.07674998790025711,
+      "0.8": 0.002109895460307598
+    },
+    "n_modes_covered": 1000,
+    "kl_to_uniform": 0.02798706293106079,
+    "entropy_nats": 6.879768371582031,
+    "fid": 8.094956077979816,
+    "is_mean": 1.7312423222619011,
+    "is_std": 0.030203243464212746
+  },
+  "train": {
+    "clean_ae": {
+      "last_loss": 0.0036413883790373802,
+      "loss_last_1k": 0.003528427481185645
+    },
+    "stage2": {
+      "last_loss": 0.238092303276062,
+      "loss_last_1k": 0.20341904386878013
+    }
+  },
+  "reference": {
+    "path": "/home/weihuang/diffusion_latent/logs/sild_matches_ldm/stacked_mnist_results_t005_seed43.json",
+    "sild": {
+      "recon_mse": 0.003520327154546976,
+      "avg_eps_loss": 0.39243761226534846,
+      "n_modes_covered": 1000,
+      "kl_to_uniform": 0.028935737907886505,
+      "entropy_nats": 6.878819465637207,
+      "fid": 8.318455744268476,
+      "is_mean": 1.7369946429511327,
+      "is_std": 0.016336491008052775
+    },
+    "vae_ldm": {
+      "recon_mse": 0.006291369441896677,
+      "avg_eps_loss": 0.3536597576458007,
+      "n_modes_covered": 1000,
+      "kl_to_uniform": 0.029342666268348694,
+      "entropy_nats": 6.878413200378418,
+      "fid": 16.207247472311963,
+      "is_mean": 1.7180127364820774,
+      "is_std": 0.02376626192221583
+    }
+  }
+}

@@ -1,0 +1,61 @@
+# ---- Trained weights (91 GB; far beyond GitHub limits) ----
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# ---- Crash dumps ----
+core-python.*
+core-ld-linux.*
+core.*
+
+# ---- Grid-engine stdout/stderr from job submissions ----
+*.e[0-9][0-9][0-9][0-9][0-9][0-9]*
+*.o[0-9][0-9][0-9][0-9][0-9][0-9]*
+run.sh.e*
+run.sh.o*
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# ---- Datasets and caches (downloaded/derived, not source) ----
+data/raw/
+data/processed/
+data/*.npz
+data/*.npy
+data/*.csv
+data/*.smi
+*.lmdb
+
+# ---- Submission artifact: a packaged duplicate of this repo's code ----
+sild_anonymous_code.zip
+
+# ---- Large sample grids; the two paper figures are tracked explicitly ----
+figures/**/*.png
+!figures/figure1_no_oracle/figure1_no_oracle_seed42.png
+!figures/stacked_mnist_stage1_family/stacked_mnist_stage1_family_seed42.png
+
+# ---- Editor / OS ----
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# ---- Local working copies ----
+*.tex.bak
+*.tex.full_version
+.tmp/
+
+# ---- Third-party baseline checkouts (clone separately; see README) ----
+external_baselines/
+
+# ---- Local Claude Code tooling config (absolute paths, machine-specific) ----
+.claude/
+
+# ---- Downloaded reference papers (third-party copyright; do not redistribute) ----
+models/*.pdf

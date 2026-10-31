@@ -1,0 +1,110 @@
+{
+  "dataset": "HIV",
+  "config": {
+    "d": 5472,
+    "vocab_size": 57,
+    "max_len": 96,
+    "latent_dim": 128,
+    "hidden_dim_enc": 1024,
+    "hidden_dim_score": 1024,
+    "n_score_layers": 8,
+    "t0": 0.05,
+    "min_snr_gamma": 5.0,
+    "ae_steps": 40000,
+    "diff_steps": 200000,
+    "charrnn_steps": 40000,
+    "charrnn_hidden": 1024,
+    "batch_size": 256,
+    "n_eval": 10000
+  },
+  "real_baseline_raw": {
+    "validity": 0.9998,
+    "uniqueness": 0.887377475495099,
+    "novelty": 0.0,
+    "n_total": 10000,
+    "n_valid": 9998,
+    "n_unique": 8872,
+    "n_novel": 0,
+    "repaired": false
+  },
+  "real_baseline_repair": {
+    "validity": 0.9801,
+    "uniqueness": 0.8845015814712784,
+    "novelty": 0.0028838389664321146,
+    "n_total": 10000,
+    "n_valid": 9801,
+    "n_unique": 8669,
+    "n_novel": 25,
+    "repaired": true
+  },
+  "uld": {
+    "recon_mse": 0.00201372685842216,
+    "avg_eps_loss": 0.0881242188392207,
+    "raw": {
+      "validity": 0.0378,
+      "uniqueness": 1.0,
+      "novelty": 0.9682539682539683,
+      "n_total": 10000,
+      "n_valid": 378,
+      "n_unique": 378,
+      "n_novel": 366,
+      "repaired": false
+    },
+    "repair": {
+      "validity": 0.4249,
+      "uniqueness": 0.3753824429277477,
+      "novelty": 0.9887147335423198,
+      "n_total": 10000,
+      "n_valid": 4249,
+      "n_unique": 1595,
+      "n_novel": 1577,
+      "repaired": true
+    }
+  },
+  "ldm": {
+    "recon_mse": 0.005952846258878708,
+    "avg_eps_loss": 0.09757296433672309,
+    "raw": {
+      "validity": 0.081,
+      "uniqueness": 0.34074074074074073,
+      "novelty": 1.0,
+      "n_total": 10000,
+      "n_valid": 810,
+      "n_unique": 276,
+      "n_novel": 276,
+      "repaired": false
+    },
+    "repair": {
+      "validity": 0.4769,
+      "uniqueness": 0.06940658418955756,
+      "novelty": 0.9969788519637462,
+      "n_total": 10000,
+      "n_valid": 4769,
+      "n_unique": 331,
+      "n_novel": 330,
+      "repaired": true
+    }
+  },
+  "charrnn": {
+    "raw": {
+      "validity": 0.9958,
+      "uniqueness": 0.8829082145009038,
+      "novelty": 0.027979981801637854,
+      "n_total": 10000,
+      "n_valid": 9958,
+      "n_unique": 8792,
+      "n_novel": 246,
+      "repaired": false
+    },
+    "repair": {
+      "validity": 0.9716,
+      "uniqueness": 0.8798888431453273,
+      "novelty": 0.030997777517838342,
+      "n_total": 10000,
+      "n_valid": 9716,
+      "n_unique": 8549,
+      "n_novel": 265,
+      "repaired": true
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "qm9": {
+    "charrnn": {
+      "error": "CharRNN.sample() got an unexpected keyword argument 'max_len'"
+    },
+    "vae": {
+      "error": "masked_fill only supports boolean masks, but got dtype Byte"
+    },
+    "aae": {
+      "error": "'NoneType' object has no attribute 'clamp_'"
+    }
+  },
+  "hiv": {
+    "charrnn": {
+      "error": "CharRNN.sample() got an unexpected keyword argument 'max_len'"
+    },
+    "vae": {
+      "error": "masked_fill only supports boolean masks, but got dtype Byte"
+    },
+    "aae": {
+      "error": "'NoneType' object has no attribute 'clamp_'"
+    }
+  },
+  "muv": {
+    "charrnn": {
+      "error": "CharRNN.sample() got an unexpected keyword argument 'max_len'"
+    },
+    "vae": {
+      "error": "masked_fill only supports boolean masks, but got dtype Byte"
+    },
+    "aae": {
+      "error": "'NoneType' object has no attribute 'clamp_'"
+    }
+  },
+  "pcba": {
+    "charrnn": {
+      "error": "CharRNN.sample() got an unexpected keyword argument 'max_len'"
+    },
+    "vae": {
+      "error": "masked_fill only supports boolean masks, but got dtype Byte"
+    },
+    "aae": {
+      "error": "'NoneType' object has no attribute 'clamp_'"
+    }
+  }
+}

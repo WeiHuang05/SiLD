@@ -1,0 +1,44 @@
+{
+  "config": {
+    "d": 704,
+    "vocab_size": 22,
+    "max_len": 32,
+    "latent_dim": 64,
+    "t0": 0.05,
+    "ae_steps": 20000,
+    "diff_steps": 80000,
+    "batch_size": 256,
+    "n_eval": 10000
+  },
+  "real_baseline": {
+    "validity": 1.0,
+    "uniqueness": 0.9597,
+    "novelty": 0.0,
+    "n_total": 10000,
+    "n_valid": 10000,
+    "n_unique": 9597,
+    "n_novel": 0
+  },
+  "uld": {
+    "recon_mse": 0.0024866494350135326,
+    "avg_eps_loss": 0.05911466660909355,
+    "validity": 0.3924,
+    "uniqueness": 0.9895514780835881,
+    "novelty": 0.5629667782642287,
+    "n_total": 10000,
+    "n_valid": 3924,
+    "n_unique": 3883,
+    "n_novel": 2186
+  },
+  "ldm": {
+    "recon_mse": 0.006184417754411697,
+    "avg_eps_loss": 0.12299869747366757,
+    "validity": 0.1505,
+    "uniqueness": 0.946843853820598,
+    "novelty": 0.3936842105263158,
+    "n_total": 10000,
+    "n_valid": 1505,
+    "n_unique": 1425,
+    "n_novel": 561
+  }
+}

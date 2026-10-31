@@ -1,0 +1,39 @@
+{
+  "config": {
+    "d": 2352,
+    "latent_dim": 64,
+    "t0": 0.05,
+    "ae_steps": 20000,
+    "diff_steps": 80000,
+    "batch_size": 128,
+    "n_eval": 25600,
+    "n_fid": 10000,
+    "seed": 44
+  },
+  "classifier_acc_on_real_stacked": 0.9769999980926514,
+  "real": {
+    "n_modes_covered": 1000,
+    "kl_to_uniform": 0.03165875002741814,
+    "entropy_nats": 6.876097202301025
+  },
+  "uld": {
+    "recon_mse": 0.0036034625954926014,
+    "avg_eps_loss": 0.3961246227379888,
+    "n_modes_covered": 1000,
+    "kl_to_uniform": 0.02562572993338108,
+    "entropy_nats": 6.882129669189453,
+    "fid": 8.9333871024443,
+    "is_mean": 1.7433417653830894,
+    "is_std": 0.021274771140393698
+  },
+  "ldm": {
+    "recon_mse": 0.0063432250171899796,
+    "avg_eps_loss": 0.3841257406864315,
+    "n_modes_covered": 1000,
+    "kl_to_uniform": 0.026447821408510208,
+    "entropy_nats": 6.881308078765869,
+    "fid": 16.00883590487615,
+    "is_mean": 1.7358321937838308,
+    "is_std": 0.02511556588186436
+  }
+}

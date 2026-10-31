@@ -1,0 +1,11 @@
+{
+  "n_fid": 2048,
+  "fid": {
+    "uld_legacy": 104.11288645593814,
+    "uld_fixed": 105.51956372564031,
+    "ldm_legacy": 81.40570820462204,
+    "ldm_fixed": 81.65023452793136
+  },
+  "delta_uld_fix_minus_legacy": 1.4066772697021719,
+  "delta_ldm_fix_minus_legacy": 0.24452632330931579
+}

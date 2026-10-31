@@ -1,0 +1,168 @@
+{
+  "dataset": "PCBA",
+  "n_eval": 10000,
+  "methods": {
+    "ULD": {
+      "raw": {
+        "validity": 0.0204,
+        "uniqueness": 1.0,
+        "novelty": 0.9754901960784313,
+        "novel_over_valid": 0.9754901960784313,
+        "n_total": 10000,
+        "n_valid": 204,
+        "n_unique": 204,
+        "n_novel": 199,
+        "avg_heavy_atoms_valid": 21.29901960784314,
+        "decode_mode": "raw"
+      },
+      "repair": {
+        "validity": 0.28,
+        "uniqueness": 0.3732142857142857,
+        "novelty": 0.9272727272727272,
+        "novel_over_valid": 0.3460714285714286,
+        "n_total": 10000,
+        "n_valid": 2800,
+        "n_unique": 1045,
+        "n_novel": 969,
+        "avg_heavy_atoms_valid": 7.3289285714285715,
+        "decode_mode": "repair"
+      },
+      "constrained": {
+        "validity": 0.0465,
+        "uniqueness": 1.0,
+        "novelty": 0.9870967741935484,
+        "novel_over_valid": 0.9870967741935484,
+        "n_total": 10000,
+        "n_valid": 465,
+        "n_unique": 465,
+        "n_novel": 459,
+        "avg_heavy_atoms_valid": 22.60430107526882,
+        "decode_mode": "constrained"
+      },
+      "rdkit_longest": {
+        "validity": 0.995,
+        "uniqueness": 0.20130653266331658,
+        "novelty": 0.9425861208187718,
+        "novel_over_valid": 0.18974874371859296,
+        "n_total": 10000,
+        "n_valid": 9950,
+        "n_unique": 2003,
+        "n_novel": 1888,
+        "avg_heavy_atoms_valid": 4.863015075376884,
+        "decode_mode": "rdkit_longest"
+      }
+    },
+    "LDM": {
+      "raw": {
+        "validity": 0.009,
+        "uniqueness": 0.5888888888888889,
+        "novelty": 0.9433962264150944,
+        "novel_over_valid": 0.5555555555555556,
+        "n_total": 10000,
+        "n_valid": 90,
+        "n_unique": 53,
+        "n_novel": 50,
+        "avg_heavy_atoms_valid": 27.255555555555556,
+        "decode_mode": "raw"
+      },
+      "repair": {
+        "validity": 0.3342,
+        "uniqueness": 0.04338719329742669,
+        "novelty": 0.8758620689655172,
+        "novel_over_valid": 0.03800119688809096,
+        "n_total": 10000,
+        "n_valid": 3342,
+        "n_unique": 145,
+        "n_novel": 127,
+        "avg_heavy_atoms_valid": 4.158587672052663,
+        "decode_mode": "repair"
+      },
+      "constrained": {
+        "validity": 0.0529,
+        "uniqueness": 0.8582230623818525,
+        "novelty": 0.9933920704845814,
+        "novel_over_valid": 0.8525519848771267,
+        "n_total": 10000,
+        "n_valid": 529,
+        "n_unique": 454,
+        "n_novel": 451,
+        "avg_heavy_atoms_valid": 33.89224952741021,
+        "decode_mode": "constrained"
+      },
+      "rdkit_longest": {
+        "validity": 1.0,
+        "uniqueness": 0.0352,
+        "novelty": 0.9005681818181818,
+        "novel_over_valid": 0.0317,
+        "n_total": 10000,
+        "n_valid": 10000,
+        "n_unique": 352,
+        "n_novel": 317,
+        "avg_heavy_atoms_valid": 3.953,
+        "decode_mode": "rdkit_longest"
+      }
+    },
+    "CharRNN": {
+      "raw": {
+        "validity": 0.9872,
+        "uniqueness": 0.9941247974068071,
+        "novelty": 0.5397391481556959,
+        "novel_over_valid": 0.5365680713128039,
+        "n_total": 10000,
+        "n_valid": 9872,
+        "n_unique": 9814,
+        "n_novel": 5297,
+        "avg_heavy_atoms_valid": 25.800749594813613,
+        "decode_mode": "raw"
+      },
+      "repair": {
+        "validity": 0.9888,
+        "uniqueness": 0.993628640776699,
+        "novelty": 0.5401526717557252,
+        "novel_over_valid": 0.5367111650485437,
+        "n_total": 10000,
+        "n_valid": 9888,
+        "n_unique": 9825,
+        "n_novel": 5307,
+        "avg_heavy_atoms_valid": 25.768709546925567,
+        "decode_mode": "repair"
+      },
+      "constrained": {
+        "validity": 0.9871,
+        "uniqueness": 0.9941242022084895,
+        "novelty": 0.5396922449811474,
+        "novel_over_valid": 0.5365211224799918,
+        "n_total": 10000,
+        "n_valid": 9871,
+        "n_unique": 9813,
+        "n_novel": 5296,
+        "avg_heavy_atoms_valid": 25.803262080842874,
+        "decode_mode": "constrained"
+      },
+      "rdkit_longest": {
+        "validity": 0.9999,
+        "uniqueness": 0.9876987698769877,
+        "novelty": 0.5418185500202511,
+        "novel_over_valid": 0.5351535153515351,
+        "n_total": 10000,
+        "n_valid": 9999,
+        "n_unique": 9876,
+        "n_novel": 5351,
+        "avg_heavy_atoms_valid": 25.546454645464546,
+        "decode_mode": "rdkit_longest"
+      }
+    }
+  },
+  "real_baseline": {
+    "validity": 1.0,
+    "uniqueness": 0.9884,
+    "novelty": 0.0,
+    "novel_over_valid": 0.0,
+    "n_total": 10000,
+    "n_valid": 10000,
+    "n_unique": 9884,
+    "n_novel": 0,
+    "avg_heavy_atoms_valid": 25.7345,
+    "decode_mode": "raw"
+  }
+}

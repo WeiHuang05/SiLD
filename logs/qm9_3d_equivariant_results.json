@@ -1,0 +1,37 @@
+{
+  "real_baseline": {
+    "atom_stability": 0.95413073157737,
+    "molecule_stability": 0.9437,
+    "validity": 0.9563,
+    "valid_unique": 0.922,
+    "n_total": 10000,
+    "n_valid": 9563,
+    "n_unique_valid": 9220,
+    "total_atoms_checked": 180186,
+    "stable_atoms": 171921
+  },
+  "uld": {
+    "atom_stability": 0.0,
+    "molecule_stability": 0.0,
+    "validity": 0.0,
+    "valid_unique": 0.0,
+    "n_total": 10000,
+    "n_valid": 0,
+    "n_unique_valid": 0,
+    "total_atoms_checked": 289887,
+    "stable_atoms": 0,
+    "recon_mse": 0.3466268479824066
+  },
+  "ldm": {
+    "atom_stability": 0.0,
+    "molecule_stability": 0.0,
+    "validity": 0.0,
+    "valid_unique": 0.0,
+    "n_total": 10000,
+    "n_valid": 0,
+    "n_unique_valid": 0,
+    "total_atoms_checked": 290000,
+    "stable_atoms": 0,
+    "recon_mse": 0.34481120109558105
+  }
+}

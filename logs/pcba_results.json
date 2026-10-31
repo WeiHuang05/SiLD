@@ -1,0 +1,48 @@
+{
+  "dataset": "PCBA",
+  "config": {
+    "d": 4896,
+    "vocab_size": 51,
+    "max_len": 96,
+    "latent_dim": 64,
+    "t0": 0.05,
+    "ae_steps": 20000,
+    "diff_steps": 80000,
+    "batch_size": 256,
+    "n_eval": 10000
+  },
+  "real_baseline": {
+    "validity": 1.0,
+    "uniqueness": 0.9906,
+    "novelty": 0.0,
+    "n_total": 10000,
+    "n_valid": 10000,
+    "n_unique": 9906,
+    "n_novel": 0,
+    "repaired": false
+  },
+  "uld": {
+    "recon_mse": 0.004332489799708128,
+    "avg_eps_loss": 0.18525438194628804,
+    "validity": 0.005,
+    "uniqueness": 1.0,
+    "novelty": 1.0,
+    "n_total": 10000,
+    "n_valid": 50,
+    "n_unique": 50,
+    "n_novel": 50,
+    "repaired": false
+  },
+  "ldm": {
+    "recon_mse": 0.007291142363101244,
+    "avg_eps_loss": 0.1387332868995145,
+    "validity": 0.0,
+    "uniqueness": 0.0,
+    "novelty": 0.0,
+    "n_total": 10000,
+    "n_valid": 0,
+    "n_unique": 0,
+    "n_novel": 0,
+    "repaired": false
+  }
+}

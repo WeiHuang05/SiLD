@@ -1,0 +1,27 @@
+{
+  "experiment_variant": "matched_stage2",
+  "run_config": "small",
+  "stage2_time_range": [
+    0.005,
+    0.999
+  ],
+  "config": {
+    "t0": 0.005,
+    "latent_dim": 256,
+    "base_ch": 64,
+    "hidden_dim_score": 512,
+    "n_score_layers": 6,
+    "ae_steps": 10000,
+    "diff_steps": 30000,
+    "batch_size": 64,
+    "lpips_weight": 0.5
+  },
+  "sild": {
+    "eps_loss": 0.3776936808601022,
+    "recon_mse": 0.004403619561344385
+  },
+  "ldm": {
+    "eps_loss": 0.3066598718054593,
+    "recon_mse": 0.005011817906051874
+  }
+}

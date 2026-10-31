@@ -1,0 +1,19 @@
+{
+  "experiment_variant": "rebuttal_toy_no_svd",
+  "config": {
+    "d": 100,
+    "k_true_evaluation_only": 5,
+    "width": 200,
+    "sigma_t": 0.1,
+    "seed": 42,
+    "regularizer": "projection",
+    "reg_weight": 10.0,
+    "post_training_svd": false
+  },
+  "metrics": {
+    "total_mse": 4.799520015716553,
+    "nonlinear_mse": 0.15677687525749207,
+    "linear_mse": 0.1604819893836975,
+    "wwt_to_true_projector_fro": 0.09729478508234024
+  }
+}

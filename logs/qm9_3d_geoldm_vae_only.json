@@ -1,0 +1,24 @@
+{
+  "real_baseline": {
+    "atom_stability": 0.9512816519069023,
+    "molecule_stability": 0.9392,
+    "validity": 0.9528,
+    "valid_unique": 0.9155,
+    "n_total": 10000,
+    "n_valid": 9528,
+    "n_unique_valid": 9155,
+    "total_atoms_checked": 179768,
+    "stable_atoms": 171010
+  },
+  "geoldm_vae": {
+    "atom_stability": 0.4911328466829868,
+    "molecule_stability": 0.4514,
+    "validity": 0.502,
+    "valid_unique": 0.4988,
+    "n_total": 10000,
+    "n_valid": 5020,
+    "n_unique_valid": 4988,
+    "total_atoms_checked": 180554,
+    "stable_atoms": 88676
+  }
+}

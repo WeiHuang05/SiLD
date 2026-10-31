@@ -1,0 +1,36 @@
+{
+  "method": "vae",
+  "seed": 42,
+  "experiment_variant": "celeba_mse_only",
+  "config": {
+    "method": "vae",
+    "seed": 42,
+    "stage2_t_min": 0.001,
+    "ae_steps": 20000,
+    "diff_steps": 60000,
+    "batch_size": 64,
+    "ae_lr": 0.0001,
+    "diff_lr": 0.0003,
+    "kl_weight": 0.0001,
+    "n_fid": 2048,
+    "sample_steps": 500,
+    "input_noise_std": 0.0,
+    "lpips_weight": 0.0,
+    "mmd_weight": 0.0,
+    "gan_weight": 0.0,
+    "stage2_time_range": [
+      0.001,
+      0.999
+    ]
+  },
+  "results": {
+    "recon_mse": 0.0012830880004912615,
+    "eps_loss": 0.2773262495175004,
+    "fid": 63.6395263671875,
+    "latent_stats": {
+      "skew": 0.06687219440937042,
+      "kurt": 0.10581287741661072,
+      "mmd": 0.007799863815307617
+    }
+  }
+}

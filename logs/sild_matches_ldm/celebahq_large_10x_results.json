@@ -1,0 +1,27 @@
+{
+  "experiment_variant": "sild_matches_ldm",
+  "run_config": "large_10x",
+  "stage2_time_range": [
+    0.001,
+    0.999
+  ],
+  "config": {
+    "t0": 0.005,
+    "latent_dim": 256,
+    "base_ch": 128,
+    "hidden_dim_score": 1024,
+    "n_score_layers": 8,
+    "ae_steps": 100000,
+    "diff_steps": 300000,
+    "batch_size": 64,
+    "lpips_weight": 0.5
+  },
+  "sild": {
+    "eps_loss": 0.29322471558116375,
+    "recon_mse": 0.0006092789117246866
+  },
+  "ldm": {
+    "eps_loss": 0.2645585110876709,
+    "recon_mse": 0.0006283836555667222
+  }
+}

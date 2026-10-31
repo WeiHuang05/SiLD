@@ -1,0 +1,36 @@
+{
+  "method": "sild",
+  "seed": 42,
+  "experiment_variant": "celeba_mse_only",
+  "config": {
+    "method": "sild",
+    "seed": 42,
+    "stage2_t_min": 0.001,
+    "ae_steps": 20000,
+    "diff_steps": 60000,
+    "batch_size": 64,
+    "ae_lr": 0.0001,
+    "diff_lr": 0.0003,
+    "kl_weight": 0.0001,
+    "n_fid": 2048,
+    "sample_steps": 500,
+    "input_noise_std": 0.005,
+    "lpips_weight": 0.0,
+    "mmd_weight": 0.0,
+    "gan_weight": 0.0,
+    "stage2_time_range": [
+      0.001,
+      0.999
+    ]
+  },
+  "results": {
+    "recon_mse": 0.0013377341674640775,
+    "eps_loss": 0.31549101369455457,
+    "fid": 64.69619750976562,
+    "latent_stats": {
+      "skew": 0.10592364519834518,
+      "kurt": 0.14997795224189758,
+      "mmd": 0.015038609504699707
+    }
+  }
+}

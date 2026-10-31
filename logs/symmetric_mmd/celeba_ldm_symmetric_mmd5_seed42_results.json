@@ -1,0 +1,28 @@
+{
+  "experiment_variant": "symmetric_mmd",
+  "method": "VAE-LDM + MMD",
+  "seed": 42,
+  "stage2_time_range": [
+    0.005,
+    0.999
+  ],
+  "config": {
+    "mmd_weight": 5.0,
+    "lpips_weight": 0.5,
+    "kl_weight": 0.0001,
+    "ae_steps": 20000,
+    "diff_steps": 60000,
+    "batch_size": 64,
+    "n_fid": 2048
+  },
+  "results": {
+    "recon_mse": 0.002423566998913884,
+    "eps_loss": 0.3535081707406789,
+    "fid": 44.55689239501953,
+    "latent_stats": {
+      "skew": 0.03130997717380524,
+      "kurt": 0.049740664660930634,
+      "mmd": 0.002100706100463867
+    }
+  }
+}
